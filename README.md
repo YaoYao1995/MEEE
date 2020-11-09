@@ -1,0 +1,24 @@
+# Instruction to reproduce MEEE
+
+## Installation
+1. Install `MuJoCo 1.50` at `~/.mujoco/mjpro150` and copy your license key to `~/.mujoco/mjkey.txt`
+2. Create a conda environment and install dependencies in `requirements.txt`
+```python
+cd code_meee
+conda create -n "your_env_name" python=3.6
+conda activate "your_env_name"
+# install cuda to suport tf-gpu==1.13.1
+conda install cudatoolkit==10.0.130 
+conda install cudnn==7.6.5
+pip install -r requirements.txt
+```
+
+## Usage
+Configuration files can be found in `examples/config`. Use the following command to conduct experiment on Humanoid-v2:
+```python
+python main.py run_local examples.development --config=examples.config.humanoid.1 --trial-gpus=1
+```
+Currently only running locally is supported, so just keep the `run_local` and `examples.development` arguments. `examples.config.humanoid.1` determines the configuration file you want to use, and `--trial-gpus=1` indicate that you would like to experiment with one Nvidia GPU, you could change the experiment environment and GPU used by modifying relative arguments. 
+
+#### Logging
+The results can be found in the default directory `log_dir=~/ray_meee/`, you could also specify the directory in `examples/config/configuration_files`.
