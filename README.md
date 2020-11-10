@@ -1,7 +1,17 @@
 # Instruction to reproduce MEEE
 
 ## Installation
-1. Install `MuJoCo 1.50` at `~/.mujoco/mjpro150` and copy your license key to `~/.mujoco/mjkey.txt`
+1. Install `MuJoCo 1.50` at `~/.mujoco/mjpro150` and copy your license key to `~/.mujoco/mjkey.txt`, for example, you need to install the following 
+dependencies first for Linux platform:
+```
+sudo yum install patchelf
+sudo yum install mesa-libGL-devel mesa-libGLU-devel
+sudo yum install mesa-libOSMesa-devel
+sudo yum install mesa-libOSMesa
+sudo yum install glfw
+sudo yum install mesa-libGL
+sudo yum install openmpi-devel
+```
 2. Create a conda environment and install dependencies in `requirements.txt`
 ```python
 cd code_meee
