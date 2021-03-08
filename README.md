@@ -1,7 +1,7 @@
 # Instruction to reproduce MEEE
 
 ## Installation
-1. Install `MuJoCo 1.50` at `~/.mujoco/mjpro150` and copy your license key to `~/.mujoco/mjkey.txt`, for example, you need to install the following 
+1. Install `MuJoCo 2.0` at `~/.mujoco/mujoco200` and copy your license key to `~/.mujoco/mjkey.txt`, for example, you need to install the following 
 dependencies first for Linux platform:
 ```
 sudo yum install patchelf
