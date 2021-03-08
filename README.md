@@ -1,5 +1,5 @@
 # Instruction to reproduce MEEE
-
+Code to reproduce the experiments in MEEE. Notice the code is mainly based on the [MBPO](https://github.com/JannerM/mbpo)
 ## Installation
 1. Install `MuJoCo 2.0` at `~/.mujoco/mujoco200` and copy your license key to `~/.mujoco/mjkey.txt`, for example, you need to install the following 
 dependencies first for Linux platform:
