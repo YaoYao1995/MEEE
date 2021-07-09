@@ -1,5 +1,5 @@
 # Instruction to reproduce MEEE
-Code to reproduce the experiments in [Sample Efficient Reinforcement Learning via Model-Ensemble Exploration and Exploitation](). 
+Code to reproduce the experiments in [Sample Efficient Reinforcement Learning via Model-Ensemble Exploration and Exploitation](https://arxiv.org/abs/2107.01825). 
 
 It is noteworthy that our code is mainly based on MBPO, and we refer interested readers to the original code base [MBPO](https://github.com/JannerM/mbpo) for more details.
 
