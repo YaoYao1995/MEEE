@@ -9,6 +9,7 @@ from . import (
 
 POOL_CLASSES = {
     'SimpleReplayPool': simple_replay_pool.SimpleReplayPool,
+    'WeightedReplayPool': simple_replay_pool.WeightedReplayPool,
     'TrajectoryReplayPool': trajectory_replay_pool.TrajectoryReplayPool,
     'ExtraPolicyInfoReplayPool': (
         extra_policy_info_replay_pool.ExtraPolicyInfoReplayPool),
