@@ -122,7 +122,7 @@ ALGORITHM_PARAMS_ADDITIONAL = {
             'n_initial_exploration_steps': int(5000),
         }
     },
-    'MEEE': {
+    'MBPO': {
         'type': 'MEEE',
         'kwargs': {
             'reparameterize': REPARAMETERIZE,
