@@ -17,11 +17,15 @@ class BaseSampler(object):
         self.env = None
         self.policy = None
         self.pool = None
+        self.action_low = None
+        self.action_high = None
 
     def initialize(self, env, policy, pool):
         self.env = env
         self.policy = policy
         self.pool = pool
+        self.action_high = env.action_space.high
+        self.action_low = env.action_space.low
 
     def set_policy(self, policy):
         self.policy = policy
