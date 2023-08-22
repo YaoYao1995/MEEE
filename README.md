@@ -54,3 +54,8 @@ If you use this code or results in your paper, please cite our work as:
   organization={IEEE}
 }
 ```
+
+## License
+
+The code in this repository is released under the MIT license as found in the
+[LICENSE](LICENSE) file.
