@@ -36,7 +36,7 @@ python main.py run_local examples.development --config=examples.config.humanoid.
 ```
 Currently only running locally is supported, so just keep the `run_local` and `examples.development` arguments. `examples.config.humanoid.1` determines the configuration file you want to use, and `--trial-gpus=1` indicate that you would like to experiment with one Nvidia GPU, you could change the experiment environment and GPU used by modifying relative arguments. 
 
-### Logging
+## Logging
 
 The results can be found in the default directory `log_dir=~/ray_meee/`, you could also specify the directory in `examples/config/configuration_files`.
 
